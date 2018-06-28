@@ -17,6 +17,7 @@ import { MetronomeService } from './nome/metronome-service';
       type="range"  /> {{ bpm.value }}
     <pre>{{ timeData | json }}</pre>
   </form>
+  <app-tick-tock [timeData]="timeData"></app-tick-tock>
   `,
   styleUrls: ['./app.component.css']
 })

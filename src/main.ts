@@ -4,6 +4,10 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
 
+import * as d3 from 'd3';
+
+window['d3'] = d3;
+
 if (environment.production) {
   enableProdMode();
 }
